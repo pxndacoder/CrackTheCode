@@ -1,0 +1,142 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f1f1f1;
+  margin: 0;
+  padding: 2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.app {
+  width: 100%;
+  max-width: 900px;
+  margin: auto;
+  background: white;
+  padding: 4rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  box-sizing: border-box;
+}
+
+/* Buttons inside the app */
+.app button {
+  background-color: #646cff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.6rem 1.2rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.25s;
+  display: block;
+  margin-top: 1rem;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.app button:hover {
+  background-color: #535bf2;
+}
+
+.app button:disabled,
+.app button[aria-disabled="true"] {
+  background-color: #cccccc;
+  color: #666666;
+  cursor: not-allowed;
+}
+
+/* Inputs and selects styling */
+label,
+input,
+select {
+  display: block;
+  margin-top: 1rem;
+}
+
+input,
+select {
+  width: 100%;
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0.6rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Lists */
+ul {
+  list-style: none;
+  padding: 0;
+  margin-top: 1rem;
+}
+
+/* Headings */
+h1 {
+  font-size: 2.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 1.4rem;
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+/* Center form elements */
+.start label,
+.start select,
+.start button {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* Align guess list */
+.guesses ul li {
+  font-family: monospace;
+  padding: 0.3rem 0;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+}
+
+/* Buttons container spacing */
+button + button {
+  margin-top: 1rem;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .app {
+    padding: 2rem;
+    max-width: 95vw;
+  }
+
+  input,
+  select,
+  .app button {
+    max-width: 100%;
+  }
+}
+.app button.restart-btn {
+  background-color: #e63946 !important; /* red */
+  color: white !important;
+}
+
+.app button.restart-btn:hover {
+  background-color: #c72c3a !important; /* darker red */
+}
